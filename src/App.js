@@ -10,14 +10,14 @@ function App() {
     {
       id: 1,
       name: "Beyoncé",
-      nationality: "American", 
+      nationality: "American",
       age: "40",
       songs: [
         {
           id: 1,
           name: "Formation",
           lyrics: "Placeholder lyrics for Formation...",
-          composer: "Composer: Beyoncé, Mike Will Made-It, Swae Lee", 
+          composer: "Composer: Beyoncé, Mike Will Made-It, Swae Lee",
           production: "Production: Produced by Mike Will Made-It",
           productiondate: "Production Date: 2015",
           awards: "Awards: Grammy Awards",

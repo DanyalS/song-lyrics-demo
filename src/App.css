@@ -1,6 +1,6 @@
 html {
   background-color: #f1f1f1;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .app-container {
@@ -15,10 +15,9 @@ html {
 }
 
 .right-section {
-  width: 70%; 
+  width: 70%;
   background-color: #f1f1f1;
   padding: 50px;
-  border-left: 1px solid rgb(221, 221, 221);
 }
 
 .artist-card {
@@ -53,7 +52,7 @@ html {
   padding: 18px 0;
   width: 150px;
   background-color: #dbdbdb;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .button-container button:hover {
@@ -93,7 +92,7 @@ html {
   font-size: 13px;
   padding: 10px;
   margin: 10px;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .section {
@@ -185,7 +184,7 @@ html {
   padding: 18px 0;
   width: 60%;
   background-color: #dbdbdb;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #song-selector button:hover {
@@ -199,7 +198,7 @@ html {
   padding: 18px 0;
   width: 60%;
   background-color: #dbdbdb;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #song-selector2 button:hover {
@@ -212,24 +211,43 @@ html {
   padding: 50px;
 }
 
-#song-new-tab {
+.section.artist-song {
   position: relative;
+}
+
+#song-new-tab {
+  position: absolute;
+  top: 0;
+  right: 40px;
   display: inline-block;
   text-decoration: none;
   color: #333;
-  padding-right: 20px;
+  transform: scale(1.5);
+  padding: 30px;
 }
 
 #song-new-tab::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: 1000px;
+  right: 0;
+  transform: translateY(-50%);
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 6px 0 6px 8px;
+  border-width: 5px 0 5px 5px;
   border-color: transparent transparent transparent #333;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+#song-new-tab::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 6px;
   transform: translateY(-50%);
-  font-size: 40px;
+  width: 2px;
+  height: 10px;
+  background-color: #333;
+  transform: rotate(-140deg);
 }
