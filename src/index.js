@@ -8,8 +8,9 @@ ReactDOM.render(
   <Router>
     <Switch>
       <Route exact path="/" component={App} />
-      <Route path="/song-lyrics" component={SongLyrics} />
+      <Route path="/song-lyrics" component={SongLyrics} /> 
     </Switch>
   </Router>,
   document.getElementById("root")
 );
+ 

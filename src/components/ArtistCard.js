@@ -12,7 +12,7 @@ const ArtistCard = ({ id, name, nationality, age, isSelected, handleCardSelectio
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
+    setIsHovered(false); 
   };
 
   const handleClick = () => {

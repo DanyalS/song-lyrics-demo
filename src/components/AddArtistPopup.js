@@ -11,7 +11,7 @@ const AddArtistPopup = ({ onAdd, onCancel }) => {
       setName("");
       setNationality("");
       setAge("");
-    }
+    } 
   };
 
   return (

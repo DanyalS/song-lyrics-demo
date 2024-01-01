@@ -10,7 +10,7 @@ function App() {
     {
       id: 1,
       name: "Beyoncé",
-      nationality: "American",
+      nationality: "American", 
       age: "40",
       songs: [
         {

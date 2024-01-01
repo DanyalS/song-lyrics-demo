@@ -11,7 +11,7 @@ function SongLyrics() {
       age: "40",
       songs: [
         {
-          id: 1,
+          id: 1, 
           name: "Formation",
           lyrics: "Placeholder lyrics for Formation...",
           composer: "Composer: Beyoncé, Mike Will Made-It, Swae Lee",
