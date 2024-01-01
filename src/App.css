@@ -1,5 +1,6 @@
 html {
   background-color: #f1f1f1;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .app-container {
@@ -52,6 +53,7 @@ html {
   padding: 18px 0;
   width: 150px;
   background-color: #dbdbdb;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .button-container button:hover {
@@ -91,6 +93,7 @@ html {
   font-size: 13px;
   padding: 10px;
   margin: 10px;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .section {
@@ -164,6 +167,7 @@ html {
   padding: 18px 0;
   width: 60%;
   background-color: #dbdbdb;
+  font-family:'Courier New', Courier, monospace;
 }
 
 #song-selector button:hover {
