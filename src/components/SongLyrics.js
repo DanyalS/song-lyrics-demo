@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
-import ArtistCard from "./components/ArtistCard";
-import AddArtistPopup from "./components/AddArtistPopup";
-import { Link } from "react-router-dom";
+import "../App.css";
 
-function App() {
-  const [selectedCardId, setSelectedCardId] = useState(null);
+function SongLyrics() {
+  const [selectedCardId, setSelectedCardId] = useState(1);
   const [artists, setArtists] = useState([
     {
       id: 1,
@@ -171,27 +168,13 @@ function App() {
     setIsPopupVisible(!isPopupVisible);
   };
 
+  const openNewTabContent = () => {
+    window.open("/newtabcontent", "_blank");
+  };
+
   return (
     <div className="app-container">
-      <div className="left-section">
-        {artists.map((artist) => (
-          <ArtistCard
-            key={artist.id}
-            id={artist.id}
-            name={artist.name}
-            nationality={artist.nationality}
-            age={artist.age}
-            isSelected={selectedCardId === artist.id}
-            handleCardSelection={handleCardSelection}
-          />
-        ))}
-        <div className="button-container">
-          <button onClick={() => setShowAddPopup(true)}>Add Artist</button>
-          <button onClick={handleRemoveSelected}>Remove Artist</button>
-        </div>
-        {showAddPopup && <AddArtistPopup onAdd={addArtist} onCancel={() => setShowAddPopup(false)} />}
-      </div>
-      <div className="right-section">
+      <div className="full-section">
         {selectedCardId && selectedArtist && selectedSong && (
           <div>
             <div className="section artist-song">
@@ -203,10 +186,9 @@ function App() {
               <p>
                 {selectedArtist?.name}: {selectedSong.name}
               </p>
-              <Link id="song-new-tab" to="/song-lyrics"></Link>
             </div>
             {selectedArtist && (
-              <div id="song-selector" className="popup" style={{ display: isPopupVisible ? "block" : "none" }}>
+              <div id="song-selector2" className="popup" style={{ display: isPopupVisible ? "block" : "none" }}>
                 <div className="popup-content">
                   <h2>{selectedArtist.name}'s Songs</h2>
 
@@ -238,4 +220,4 @@ function App() {
   );
 }
 
-export default App;
+export default SongLyrics;
