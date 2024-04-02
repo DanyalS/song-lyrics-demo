@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/DanyalS.github.io/song-lyrics-demo/static/css/main.fad94c03.css",
-    "main.js": "/DanyalS.github.io/song-lyrics-demo/static/js/main.15b55541.js",
+    "main.js": "/DanyalS.github.io/song-lyrics-demo/static/js/main.6ce3db33.js",
     "index.html": "/DanyalS.github.io/song-lyrics-demo/index.html",
     "main.fad94c03.css.map": "/DanyalS.github.io/song-lyrics-demo/static/css/main.fad94c03.css.map",
-    "main.15b55541.js.map": "/DanyalS.github.io/song-lyrics-demo/static/js/main.15b55541.js.map"
+    "main.6ce3db33.js.map": "/DanyalS.github.io/song-lyrics-demo/static/js/main.6ce3db33.js.map"
   },
   "entrypoints": [
     "static/css/main.fad94c03.css",
-    "static/js/main.15b55541.js"
+    "static/js/main.6ce3db33.js"
   ]
 }
